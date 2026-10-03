@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery | Mamta Creations</title>
+<meta name="description" content="Photos of handmade rakhis, Ganesh mandapas, Diwali decor, torans, wedding essentials and quilling by Mamta Creations.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+<header id="site-header"></header>
+<main class="wrap">
+  <div class="page-head">
+    <h1>Our work</h1>
+    <p class="lead">Tap any photo to see it larger. Every piece can be made to order, so ask us on WhatsApp for the price.</p>
+  </div>
+  <div id="filters" class="filters" role="group" aria-label="Filter by category"></div>
+  <div id="gallery-grid" class="gallery"></div>
+  <div id="gallery-empty" class="empty" hidden>
+    <p>Photos for this category are coming soon. Message us on WhatsApp and we will share recent pieces.</p>
+    <a class="btn" href="contact.html">Contact us</a>
+  </div>
+</main>
+
+<dialog id="lightbox" class="lightbox" aria-label="Photo viewer">
+  <button id="lb-close" class="lb-close" type="button" aria-label="Close">&times;</button>
+  <button id="lb-prev" class="lb-nav prev" type="button" aria-label="Previous photo">&#8249;</button>
+  <figure>
+    <img id="lb-img" alt="">
+    <figcaption>
+      <span><b id="lb-title"></b><small><span id="lb-cat"></span>, <span id="lb-count"></span></small></span>
+      <a id="lb-wa" class="btn btn-wa" target="_blank" rel="noopener">Ask for price</a>
+    </figcaption>
+  </figure>
+  <button id="lb-next" class="lb-nav next" type="button" aria-label="Next photo">&#8250;</button>
+</dialog>
+<footer id="site-footer"></footer>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Mamta Creations</title>
+<meta name="description" content="Enquire or order handmade festive and wedding decor from Mamta Creations on WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+<header id="site-header"></header>
+<main class="wrap">
+  <div class="page-head">
+    <h1>Order or enquire</h1>
+    <p class="lead">Tell us what you need and when. The quickest way is WhatsApp, and you can attach reference photos there too.</p>
+  </div>
+  <div class="contact">
+    <form id="c-form" class="form" novalidate>
+      <label>Your name<input name="name" required autocomplete="name"></label>
+      <label>Phone number<input name="phone" type="tel" required autocomplete="tel" pattern="[0-9+ ]{10,15}"></label>
+      <div class="row">
+        <label>Interested in<select name="interest" id="c-interest"></select></label>
+        <label>Needed by<input name="date" type="date"></label>
+      </div>
+      <label>Details<textarea name="message" rows="5" placeholder="Colours, quantity, names to add, size…"></textarea></label>
+      <div class="actions">
+        <button class="btn btn-wa" type="submit" value="wa">Send on WhatsApp</button>
+        <button id="c-email-btn" class="btn btn-outline" type="submit" value="email">Send by email</button>
+      </div>
+      <p id="c-status" class="status" role="status"></p>
+    </form>
+    <aside id="c-details" class="details"></aside>
+  </div>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
